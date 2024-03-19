@@ -1,0 +1,22 @@
+{
+  "name": "tsx-concurrently",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run-example": "tsx ./src/example.ts",
+    "watch-example": "tsx watch ./src/example.ts --clear-screen=false",
+    "watch-example2": "tsx watch ./src/example2.ts --clear-screen=false",
+    "echo": "echo test",
+    "concurrently-example": "concurrently \"npm:echo\" \"npm:watch-example\"",
+    "concurrently-example-run": "concurrently \"npm:echo\" \"npm:run-example\"",
+    "concurrently-example2": "concurrently \"npm:echo\" \"npm:watch-example2\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "tsx": "^4.7.1"
+  },
+  "dependencies": {
+    "googleapis": "^134.0.0"
+  }
+}
